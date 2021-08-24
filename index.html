@@ -1,1 +1,97 @@
 # ProjectOne
+//triangle(145, 199, 168, 194, 159, 229);//
+
+background(0, 0, 0);
+
+    //EYESIZE
+var eyeSize = 20;
+var y = 20; 
+var fang1 =145; 
+var fang2= 199; 
+var fang3=168;
+var fang4=194;
+var fang5=159; 
+var fang6=223;
+
+
+draw = function() {
+     
+
+
+
+
+
+ellipse(150, 70, 60, 120);  // left ear
+ellipse(240, 70, 60, 120);  // right ear
+fill(252, 161, 246);        //PINK
+ellipse( 240, 80, 28, 95);  //LeftInnerEar
+ellipse( 150, 80, 28, 95);  //RightInnerEar
+
+fill(255, 255, 255);            //WhiteRabbit
+ellipse(200, 170, 150, 150);    // face
+
+fill(247, 0, 0);                //Bunnies' eye color
+ellipse(170, 150, 20 , y); //LeftEye
+ellipse(230, 150, 20, y);  // right eye
+fill(255, 138, 247);                    //pinkNoseColor
+arc(201, 164, 22, 39, 3, 180);          //TheNose
+
+var Boca = 191;                         //VariableForMouth
+
+fill(255, 255, 255);                    //WhiteTeef
+rect(185, 200, 15, Boca); // left tooth
+rect(200, 200, 15, Boca); // right tooth
+
+y = y + 20;
+
+if(y > 400){
+//White background//
+background(255, 255, 255);
+
+ellipse(150, 70, 60, 120);  // left ear
+ellipse(240, 70, 60, 120);  // right ear
+fill(252, 161, 246);        //PINK
+ellipse( 240, 80, 28, 95);  //LeftInnerEar
+ellipse( 150, 80, 28, 95);  //RightInnerEar
+
+fill(255, 255, 255);            //WhiteRabbit
+ellipse(200, 170, 150, 150);    // face
+
+fill(247, 0, 0);                //Bunnies' eye color
+ellipse(170, 150, 20 , 20); //LeftEye
+ellipse(230, 150, 20, 20);  // right eye
+
+
+
+fill(255, 138, 247);                    //pinkNoseColor
+arc(201, 164, 22, 39, 3, 180);          //TheNose
+
+var Boca = 191;                         //VariableForMouth
+
+fill(255, 255, 255);                           //NewMouth
+ellipse(199, 206, 123, 28);
+ 
+triangle(fang1,fang2,fang3,fang4,fang5,(fang6-2)); 
+triangle((fang1+24),(fang2-5),(fang3+24),(fang4-2),(fang5+23),(fang6-3));
+triangle((fang1+53),(fang2-7),(fang3+54),(fang4-1),(fang5+49),(fang6-3));
+triangle((fang1+84),(fang2-6),(fang3+86),(fang4+3),(fang5+83),(fang6-3));
+   //fangs
+
+
+ // right tooth
+fill(0, 0, 0);
+
+
+fill(0, 0, 0);          //eyebrows
+line(149, 124, 196, 150);
+line(247, 129, 203, 148);
+
+}
+
+
+
+
+}; 
+
+
+ 
